@@ -42,10 +42,13 @@ def plot_frequencies(img_array: np.array(int)) -> None:
 
 def frequency(channel: np.array(int)) -> np.array(int):
     flat_channel = channel.flatten()
+    """
     frequency_array = np.zeros(shape=(256,1))
     for i, pixel in enumerate(flat_channel):
         frequency_array[pixel] += 1
-    return frequency_array
+    """
+    np_unique = np.unique(flat_channel, return_counts=True)[1]
+    return np_unique
 
 if __name__ == '__main__':
     main()
