@@ -4,7 +4,8 @@ import argparse
 import matplotlib.pyplot as plt
 
 """
-I'm not sure these Histograms are correct. 
+The speedup from using Numpy is ridiculous...
+Image Histograms match Gimp, not compared with Photoshop... 
 """
 
 def main():
