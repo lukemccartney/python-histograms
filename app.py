@@ -4,12 +4,7 @@ import argparse
 import matplotlib.pyplot as plt
 
 """
-
-This is incredibly un-optimised and I'm sure there's a better way to do this.
-
-I'm also not entirely sure the Histograms are correct... 
-When compared with my Sony Alpha a6000's Histograms, they don't seem to match up.
-
+I'm not sure these Histograms are correct. 
 """
 
 def main():
@@ -35,10 +30,6 @@ def plot_frequencies(img_array: np.array(int)) -> None:
     axs[1].plot(channel_g_frequency, 'tab:green')
     axs[2].plot(channel_b_frequency, 'tab:blue')
     plt.show()
-
-# def red_frequency(img: np.array(int)) -> np.array(int):
-# def green_frequency(img: np.array(int)) -> np.array(int):
-# def blue_frequency(img: np.array(int)) -> np.array(int):
 
 def frequency(channel: np.array(int)) -> np.array(int):
     flat_channel = channel.flatten()
