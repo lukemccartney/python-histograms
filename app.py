@@ -13,7 +13,7 @@ When compared with my Sony Alpha a6000's Histograms, they don't seem to match up
 """
 
 def main():
-    img = cv2.imread("_DSC9472.JPG")
+    img = cv2.imread("/Users/lukemccartney/Documents/Programming Languages/Python/python-frequency/img/_DSC9483.jpg")
     img_array = np.array(img)
     print(img_array)
     print("Shape of Image: \t", img_array.shape)
