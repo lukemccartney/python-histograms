@@ -9,11 +9,14 @@ Image Histograms match Gimp, not compared with Photoshop...
 """
 
 def main():
-    img = cv2.imread("/Users/lukemccartney/Documents/Programming Languages/Python/python-frequency/img/_DSC9483.jpg")
-    img_array = np.array(img)
+    img_array = read_file("img/_DSC9493.JPG")
     print(img_array)
     print("Shape of Image: \t", img_array.shape)
     plot_frequencies(img_array)
+
+def read_file(img: str) -> np.array(int):
+    img = cv2.imread(img)
+    return np.array(img)
 
 def plot_frequencies(img_array: np.array(int)) -> None:
     channel_r = img_array[:,:,0]
