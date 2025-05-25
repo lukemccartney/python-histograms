@@ -3,11 +3,6 @@ import numpy as np
 import argparse
 import matplotlib.pyplot as plt
 
-"""
-The speedup from using Numpy is ridiculous...
-Image Histograms match Gimp, not compared with Photoshop... 
-"""
-
 def main():
     img_array = read_file("img/_DSC9493.JPG")
     print(img_array)
